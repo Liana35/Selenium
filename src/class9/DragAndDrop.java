@@ -19,7 +19,7 @@ public class DragAndDrop {
 //        get the element which u want to drag
         WebElement draggable = driver.findElement(By.id("draggable"));
 
-//        get the dropable element
+//        get the droppable element, where the drag goes
 
         WebElement dropable = driver.findElement(By.id("droppable"));
 

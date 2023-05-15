@@ -14,7 +14,9 @@ public class ActionClass {
         driver.get("https://www.amazon.com/");
         WebElement en= driver.findElement(By.xpath("//div[text()='EN']"));
         Actions action= new Actions(driver);
+        //Moves the mouse to the specified element
         action.moveToElement(en).perform();
+
 
     }
 }

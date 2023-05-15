@@ -26,11 +26,12 @@ public class Screenshot {
 
 //        take screenshot
         TakesScreenshot ss = (TakesScreenshot) driver;
-//        take the scrren shot as file
+//        take the screenshot as file
         File sourceFile = ss.getScreenshotAs(OutputType.FILE);
-        System.out.println(sourceFile);
+       // System.out.println(sourceFile);
 //        save the file in computer
         FileUtils.copyFile(sourceFile,new File("C:/Users/liana/IdeaProjects/Selenium/src/screen/iou.png"));
+
 
 
 

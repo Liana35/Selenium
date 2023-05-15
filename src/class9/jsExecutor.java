@@ -19,15 +19,17 @@ public class jsExecutor {
 
 //        to highlight the username box
 
-//        1. declare isntance
+//        1. declare instance
         JavascriptExecutor js = (JavascriptExecutor) driver;
 //        2.execute script
 //        arguments[0].style.border='10px dotted pink'"    draw a box
         js.executeScript("arguments[0].style.border='5px dotted blue'", username);
-
+        //with background
+       // js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", username);
 
 //        find the WebElement
         WebElement loginBtn = driver.findElement(By.xpath("//input[@id='btnLogin']"));
 //        click the login button
         js.executeScript("arguments[0].click();", loginBtn);
+
     }}

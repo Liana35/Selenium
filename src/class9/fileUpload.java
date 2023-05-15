@@ -13,6 +13,6 @@ public class fileUpload {
         driver.get("https://the-internet.herokuapp.com/upload");
 
         WebElement chooseFile= driver.findElement(By.xpath("//input[@id='file-upload']"));
-        chooseFile.sendKeys("C:\\Users\\liana\\Desktop\\ArrayListVSLinkedList.txt");
+        chooseFile.sendKeys("C:\\Users\\liana\\Desktop\\TestNG\\TestNG.txt");
     }
 }
